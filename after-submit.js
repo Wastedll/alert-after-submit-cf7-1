@@ -1,3 +1,4 @@
+/* After submit form cf7 Bustedll  */
 function set_alert_after_submit(page, word){		
     $(document).ajaxComplete(function() {
         if($("body").hasClass(page)||$("body .jPanelMenu-panel #wrapper div[itemscope]").hasClass(page)){
@@ -9,8 +10,7 @@ function set_alert_after_submit(page, word){
                                     "</div>"+
                                 "<div>"+
                             "</div>";
-            var getDisplay = $(".wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok");
-            // var getDisplay = this.find(".wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok");
+            var getDisplay = $(".wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok");           
             getDisplay.html(contentBox);
             $(".modal-box").css({
                 "position":"fixed",
@@ -19,11 +19,7 @@ function set_alert_after_submit(page, word){
                 "background-color":"white",
                 "left":"50%;",
                 "transform":"translate(-50%, -50%);"				
-            });
-            $(".show-msg").css({
-                // "font-size":"3rem",
-                "color":"black"			
-            });
+            });           
             $(".close").css({
                 "position": "absolute",
                 "top": "20px",
